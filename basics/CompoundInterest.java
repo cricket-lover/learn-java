@@ -1,6 +1,6 @@
 public class CompoundInterest{
   public static void main(String [] args){
-    if(args.length != 0){
+    if(args.length >= 3){
       int principle = Integer.parseInt(args[0]);
       double rate = Integer.parseInt(args[1])/100.00;
       int period = Integer.parseInt(args[2]);
