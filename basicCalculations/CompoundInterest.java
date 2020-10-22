@@ -4,7 +4,6 @@ public class CompoundInterest{
       int principle = Integer.parseInt(args[0]);
       double rate = Integer.parseInt(args[1])/100.00;
       int period = Integer.parseInt(args[2]);
-
       double compoundPrinciple = principle;
       int count = 0;
       while(count<period){
