@@ -4,6 +4,8 @@ public class ConvertToFahrenheit{
       double centigrade = Float.parseFloat(args[0]);
       double fahrenheit = (centigrade * 9/5.00) + 32;
       System.out.println("Temperature of " + centigrade + " degrees centigrade in fahrenheit is " +  fahrenheit);
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }

@@ -7,6 +7,8 @@ public class SumOfN{
         result = result + i;
       }
       System.out.println(result);
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }

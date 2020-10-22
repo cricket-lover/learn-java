@@ -8,6 +8,8 @@ public class MultiplicationTable{
         System.out.println(num1 + " x " + i + " = " + num1*i);
         i++;
       }
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }

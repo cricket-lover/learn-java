@@ -10,7 +10,8 @@ public class LCM{
         i+=greater;
       }
       System.out.println("LCM of " + num1 + "," + num2 + " is " + i);
-      
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }

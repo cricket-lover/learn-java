@@ -8,6 +8,8 @@ public class Factorial{
         num--;
       }
       System.out.println(result);
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }

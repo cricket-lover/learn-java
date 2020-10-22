@@ -6,6 +6,8 @@ public class SimpleInterest{
       int period = Integer.parseInt(args[2]);
       double interest = (principle*rate*period)/100.00;
       System.out.println(interest);
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }

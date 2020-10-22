@@ -18,6 +18,8 @@ public class Fibonacci{
           curr = next;
         }
       }
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }

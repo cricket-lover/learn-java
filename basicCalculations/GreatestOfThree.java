@@ -7,6 +7,8 @@ public class GreatestOfThree{
       int greaterOfTwo = num1 > num2 ? num1 : num2;
       int greatestOfThree = num3 > greaterOfTwo ? num3 : greaterOfTwo;
       System.out.println("Greatest of " + num1 + "," + num2 + "," + num3 + " is " + greatestOfThree);
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }

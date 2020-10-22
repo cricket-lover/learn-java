@@ -13,6 +13,8 @@ public class HCF{
         divisor = remainder;
       }
       System.out.println("GCD of " + num1 + "," + num2 + " is " + dividend);
+    }else{
+      System.out.println("Please provide a valid input");
     }
   }
 }
