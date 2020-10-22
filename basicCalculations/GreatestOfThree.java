@@ -1,14 +1,18 @@
 public class GreatestOfThree{
+  public static int getGreatestOfThree(int num1, int num2, int num3){
+    int greatest = Math.max(num1, num2);
+    return Math.max(greatest, num3);
+  }
+
   public static void main(String[] args){
-    if(args.length >= 3){
-      int num1 = Integer.parseInt(args[0]);
-      int num2 = Integer.parseInt(args[1]);
-      int num3 = Integer.parseInt(args[2]);
-      int greaterOfTwo = num1 > num2 ? num1 : num2;
-      int greatestOfThree = num3 > greaterOfTwo ? num3 : greaterOfTwo;
-      System.out.println("Greatest of " + num1 + "," + num2 + "," + num3 + " is " + greatestOfThree);
-    }else{
-      System.out.println("Please provide a valid input");
+    if(args.length < 3){
+      System.out.println("Insufficient arguments");
+      return;
     }
+
+    int num1 = Integer.parseInt(args[0]);
+    int num2 = Integer.parseInt(args[1]);
+    int num3 = Integer.parseInt(args[2]);
+    System.out.println("Greatest of " + num1 + "," + num2 + "," + num3 + " is " + getGreatestOfThree(num1, num2, num3));
   }
 }
