@@ -1,4 +1,4 @@
-public class SimpleInterest{
+public class SimpleInterest {
   public static double getSimpleInterest(int principle, int rate, int period){
     return (principle * rate * period) / 100.00;
   }

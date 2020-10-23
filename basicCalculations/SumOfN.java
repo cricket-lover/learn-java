@@ -1,4 +1,4 @@
-public class SumOfN{
+public class SumOfN {
   public static int getSumOfN(int num){
     int sum = 0;
 

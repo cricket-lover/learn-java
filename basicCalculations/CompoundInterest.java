@@ -1,4 +1,4 @@
-public class CompoundInterest{
+public class CompoundInterest {
   public static double getCompoundInterest(int principle, int rate, int period){
     double totalAmount = principle;
 

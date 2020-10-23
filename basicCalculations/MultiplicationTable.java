@@ -1,4 +1,4 @@
-public class MultiplicationTable{
+public class MultiplicationTable {
   public static void printMultiplicationTable(int num, int limit){
     for(int mulWith = 1; mulWith <= limit; mulWith++){
       System.out.println(num + " x " + mulWith + " = " + num * mulWith);

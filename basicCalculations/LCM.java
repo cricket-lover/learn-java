@@ -1,4 +1,4 @@
-public class LCM{
+public class LCM {
   public static int getLcm(int num1, int num2){
     int greater = Math.max(num1, num2);
     int smaller = Math.min(num1, num2);

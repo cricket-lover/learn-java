@@ -1,4 +1,4 @@
-public class Primes{
+public class Primes {
   public static int getNumOfFactors(int num){
     int numOfFactors = 1;
     

@@ -1,4 +1,4 @@
-public class GreatestOfThree{
+public class GreatestOfThree {
   public static int getGreatestOfThree(int num1, int num2, int num3){
     int greaterOfTwo = Math.max(num1, num2);
     return Math.max(greaterOfTwo, num3);

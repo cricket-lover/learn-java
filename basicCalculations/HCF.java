@@ -1,4 +1,4 @@
-public class HCF{
+public class HCF {
   public static int getHcf(int num1, int num2){
     int divisor = num1;
     int dividend = num2;

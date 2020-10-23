@@ -1,4 +1,4 @@
-public class Fibonacci{
+public class Fibonacci {
   public static void printFibonacci(int noOfTerms){
     int currentTerm = 0;
     int nextTerm = 1;

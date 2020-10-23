@@ -1,4 +1,4 @@
-public class Factorial{
+public class Factorial {
   public static int getFactorial(int num){
     int factorial = 1;
 
