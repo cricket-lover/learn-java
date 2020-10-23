@@ -9,7 +9,7 @@ public class ConvertToFahrenheit{
       return;
     }
     
-    double centigrade = Float.parseFloat(args[0]);
+    double centigrade = Double.parseDouble(args[0]);
     System.out.println("Temperature of " + centigrade + " degrees centigrade in fahrenheit is " + getFahrenheit(centigrade));
   }
 }

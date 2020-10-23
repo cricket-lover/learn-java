@@ -8,6 +8,7 @@ public class MultiplicationTable{
   public static void main(String [] args){
     if(args.length < 2){
       System.out.println("Insuffiecient arguments");
+      return;
     }
 
     int num = Integer.parseInt(args[0]);

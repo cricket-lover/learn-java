@@ -13,6 +13,7 @@ public class LCM{
   public static void main(String[] args){
     if(args.length < 2){
       System.out.println("Insufficient arguments");
+      return;
     }
 
     int num1 = Integer.parseInt(args[0]);

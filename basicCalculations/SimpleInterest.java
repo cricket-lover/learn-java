@@ -6,6 +6,7 @@ public class SimpleInterest{
   public static void main(String [] args){
     if(args.length < 3){
       System.out.println("Insufficient arguments");
+      return;
     }
 
     int principle = Integer.parseInt(args[0]);
