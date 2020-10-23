@@ -1,8 +1,8 @@
 public class RangeOfNumbers {
 
-  public static void displayRangeOfNum(int[] numbers) {
-    for (int currentNumber : numbers) {
-      System.out.println(currentNumber);
+  public static void displayList(int[] list) {
+    for (int element : list) {
+      System.out.println(element);
     }
   }
 
@@ -26,6 +26,6 @@ public class RangeOfNumbers {
     int step = args.length == 3 ? Integer.parseInt(args[2]) : 1;
     int[] rangeOfNum = range(from, to, step);
 
-    displayRangeOfNum(rangeOfNum);
+    displayList(rangeOfNum);
   }
 }
