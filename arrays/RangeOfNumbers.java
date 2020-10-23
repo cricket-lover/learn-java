@@ -7,7 +7,7 @@ public class RangeOfNumbers {
   }
 
   public static int[] range(int from, int to, int step) {
-    int[] rangeOfNum = new int[(to - from + 1) / step];
+    int[] rangeOfNum = new int[((Math.abs(to - from) + 1) / Math.abs(step))];
 
     for (int index = 0; index <= rangeOfNum.length - 1; index++) {
       rangeOfNum[index] = (index * step) + from;
