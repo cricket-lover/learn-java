@@ -3,7 +3,7 @@ public class CompoundInterest{
     double totalAmount = principle;
 
     for(int count = 0; count < period; count++){
-      totalAmount = totalAmount * (1+rate);
+      totalAmount = totalAmount * (1 + rate);
     }
     return totalAmount - principle;
   }

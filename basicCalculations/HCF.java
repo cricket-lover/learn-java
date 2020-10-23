@@ -4,8 +4,7 @@ public class HCF{
     int dividend = num2;
     int remainder;
 
-    while(divisor > 0)
-    {
+    while(divisor > 0){
       remainder = dividend % divisor;
       dividend = divisor;
       divisor = remainder;

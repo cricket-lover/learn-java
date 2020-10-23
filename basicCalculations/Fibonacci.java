@@ -3,7 +3,7 @@ public class Fibonacci{
     int currentTerm = 0;
     int nextTerm = 1;
 
-    for(int term=0; term<noOfTerms; term++){
+    for(int term = 0; term < noOfTerms; term++){
       System.out.println(currentTerm);
       nextTerm = currentTerm + nextTerm;;
       currentTerm = nextTerm - currentTerm;

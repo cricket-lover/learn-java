@@ -4,6 +4,7 @@ public class MultiplicationTable{
       System.out.println(num + " x " + mulWith + " = " + num * mulWith);
     }
   }
+  
   public static void main(String [] args){
     if(args.length < 2){
       System.out.println("Insuffiecient arguments");

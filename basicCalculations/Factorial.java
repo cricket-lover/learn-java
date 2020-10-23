@@ -1,11 +1,11 @@
 public class Factorial{
   public static int getFactorial(int num){
-    int result = 1;
+    int factorial = 1;
+
     for(int count = num; count >= 1; count--){
-      result = result * count;
+      factorial *= count;
     }
-    
-    return result;
+    return factorial;
   }
 
   public static void main(String [] args){
