@@ -1,14 +1,19 @@
 public class SumOfN{
-  public static void main(String [] args){
-    if(args.length != 0){
-      int num = Integer.parseInt(args[0]);
-      int result = 0;
-      for(int i=1;i<=num;i++){
-        result = result + i;
-      }
-      System.out.println(result);
-    }else{
-      System.out.println("Please provide a valid input");
+  public static int getSumOfN(int num){
+    int sum = 0;
+
+    for(int count = 1; count <= num; count++){
+      sum += count;
     }
+    return sum;
+  }
+  
+  public static void main(String [] args){
+    if(args.length == 0){
+      System.out.println("Insufficient arguments");
+    }
+      
+    int num = Integer.parseInt(args[0]);
+    System.out.println("Sum of natural numbers upto " + num + " is " + getSumOfN(num));
   }
 }
