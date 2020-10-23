@@ -1,15 +1,20 @@
 public class Factorial{
-  public static void main(String [] args){
-    if(args.length != 0){
-      int num = Integer.parseInt(args[0]);
-      int result = 1;
-      while(num>=1){
-        result = result * num;
-        num--;
-      }
-      System.out.println(result);
-    }else{
-      System.out.println("Please provide a valid input");
+  public static int getFactorial(int num){
+    int result = 1;
+    for(int count = num; count >= 1; count--){
+      result = result * count;
     }
+    
+    return result;
+  }
+
+  public static void main(String [] args){
+    if(args.length == 0){
+      System.out.println("Insufficient arguments");
+      return;
+    }
+
+    int num = Integer.parseInt(args[0]);   
+    System.out.println("Factorial of " + num + " is " + getFactorial(num));
   }
 }
