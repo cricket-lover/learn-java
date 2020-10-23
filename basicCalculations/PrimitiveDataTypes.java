@@ -1,4 +1,5 @@
 public class PrimitiveDataTypes {
+
   public static void main(String[] args) {
     byte byteValue = 127;          // 1 byte range -128 -127
     short shortValue = 32767;      // 2 bytes range -32768 -32767 
@@ -19,4 +20,5 @@ public class PrimitiveDataTypes {
     System.out.println("Char value : " + charValue);
     System.out.println("Boolean value : " + booleanValue);
   }
+  
 }

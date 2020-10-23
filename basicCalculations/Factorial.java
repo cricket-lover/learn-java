@@ -1,4 +1,5 @@
 public class Factorial {
+
   public static int getFactorial(int num){
     int factorial = 1;
 
@@ -17,4 +18,5 @@ public class Factorial {
     int num = Integer.parseInt(args[0]);   
     System.out.println("Factorial of " + num + " is " + getFactorial(num));
   }
+  
 }

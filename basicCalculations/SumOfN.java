@@ -1,4 +1,5 @@
 public class SumOfN {
+
   public static int getSumOfN(int num){
     int sum = 0;
 
@@ -17,4 +18,5 @@ public class SumOfN {
     int num = Integer.parseInt(args[0]);
     System.out.println("Sum of natural numbers upto " + num + " is " + getSumOfN(num));
   }
+  
 }

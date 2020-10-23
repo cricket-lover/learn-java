@@ -1,4 +1,5 @@
 public class CompoundInterest {
+  
   public static double getCompoundInterest(int principle, int rate, int period){
     double totalAmount = principle;
 
@@ -21,4 +22,5 @@ public class CompoundInterest {
     String message = "C.I of principle:" + principle + ", rate:" + rate + ", period:" + period + " is "; 
     System.out.println(message + compoundInterest);
   }
+  
 }

@@ -1,4 +1,5 @@
 public class HCF {
+
   public static int getHcf(int num1, int num2){
     int divisor = num1;
     int dividend = num2;
@@ -22,4 +23,5 @@ public class HCF {
     int num2 = Integer.parseInt(args[1]); 
     System.out.println("GCD of " + num1 + "," + num2 + " is " + getHcf(num1, num2));
   }
+  
 }

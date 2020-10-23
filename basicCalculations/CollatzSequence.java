@@ -1,4 +1,5 @@
 public class CollatzSequence {
+  
   public static boolean isEven(int num){
     return num % 2 == 0;
   }
@@ -22,4 +23,5 @@ public class CollatzSequence {
     int start = Integer.parseInt(args[0]);
     printCollatzSequence(start);
   }
+
 }

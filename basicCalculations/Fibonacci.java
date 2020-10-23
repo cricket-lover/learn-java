@@ -1,4 +1,5 @@
 public class Fibonacci {
+
   public static void printFibonacci(int noOfTerms){
     int currentTerm = 0;
     int nextTerm = 1;
@@ -19,4 +20,5 @@ public class Fibonacci {
     int noOfTerms = Integer.parseInt(args[0]);
     printFibonacci(noOfTerms);
   }
+  
 }  

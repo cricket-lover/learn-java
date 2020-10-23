@@ -1,4 +1,5 @@
 public class Primes {
+
   public static int getNumOfFactors(int num){
     int numOfFactors = 1;
     
@@ -35,4 +36,5 @@ public class Primes {
     int end = Math.max(num1, num2);
     printPrimesInRange(start, end);
   }
+  
 }

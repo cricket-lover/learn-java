@@ -1,4 +1,5 @@
 public class SimpleInterest {
+
   public static double getSimpleInterest(int principle, int rate, int period){
     return (principle * rate * period) / 100.00;
   }
@@ -15,4 +16,5 @@ public class SimpleInterest {
     String message = "Simple Interest of principle:" + principle + ", rate:" + rate + ", period:" + period + " is ";
     System.out.println(message + getSimpleInterest(principle, rate, period));
   }
+  
 }

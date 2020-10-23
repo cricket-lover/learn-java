@@ -1,4 +1,5 @@
 public class ConvertToCentigrade {
+
   public static double getCentigrade(double fahrenheit){
     return (fahrenheit - 32) * 5/9;
   }
@@ -13,4 +14,5 @@ public class ConvertToCentigrade {
     String message = "Temperature of " + fahrenheit + " degrees fahrenheit in centigrade is ";
     System.out.println(message +  getCentigrade(fahrenheit));
   }
+  
 }
