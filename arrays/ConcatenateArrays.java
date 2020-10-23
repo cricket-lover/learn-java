@@ -6,23 +6,23 @@ public class ConcatenateArrays {
     }
   }
 
-  public static void copy(int[] source, int[] destination, int startIndex) {
-    for (int index = 0; index <= source.length - 1; index++) {
-      destination[startIndex + index] = source[index];
+  public static void copy(int[] source, int[] destination, int start, int end) {
+    for (int index = 0; index <= end; index++) {
+      destination[start + index] = source[index];
     }
   }
 
   public static int[] concat(int[] first, int[] second) {
     int[] resultedArray = new int[first.length + second.length];
 
-    copy(first, resultedArray, 0);
-    copy(second, resultedArray, first.length);
+    copy(first, resultedArray, 0, first.length - 1);
+    copy(second, resultedArray, first.length, second.length - 1);
 
     return resultedArray;
   }
 
   public static void main(String[] args) {
-    int[] first = { 1, 6, 8, 0, 9 };
+    int[] first = { 1, 2, 3 };
     int[] second = { 4, 5 };
 
     int[] concatenatedArray = concat(first, second);
