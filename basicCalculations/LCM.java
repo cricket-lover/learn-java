@@ -1,17 +1,22 @@
 public class LCM{
-  public static void main(String[] args){
-    if(args.length >= 2){
-      int num1 = Integer.parseInt(args[0]);
-      int num2 = Integer.parseInt(args[1]);
-      int greater = num1 > num2?num1:num2;
-      int smaller = num1 < num2?num1:num2;
-      int i = greater;
-      while(i % smaller > 0){
-        i+=greater;
-      }
-      System.out.println("LCM of " + num1 + "," + num2 + " is " + i);
-    }else{
-      System.out.println("Please provide a valid input");
+  public static int getLcm(int num1, int num2){
+    int greater = Math.max(num1, num2);
+    int smaller = Math.min(num1, num2);
+    int lcm = greater;
+
+    while(lcm % smaller > 0){
+      lcm += greater;
     }
+    return lcm;
+  }
+
+  public static void main(String[] args){
+    if(args.length < 2){
+      System.out.println("Insufficient arguments");
+    }
+
+    int num1 = Integer.parseInt(args[0]);
+    int num2 = Integer.parseInt(args[1]);
+    System.out.println("LCM of " + num1 + "," + num2 + " is " + getLcm(num1, num2));
   }
 }
