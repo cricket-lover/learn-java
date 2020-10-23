@@ -15,14 +15,24 @@ public class Primes{
     return numOfFactors <= 2 ;
   }
 
+  public static void printPrimesInRange(int start, int end){
+    for(int count = start; count <= end; count++){
+      if(isPrime(count)){
+        System.out.println(count);
+      }
+    }
+  }
+
   public static void main(String[] args){
-    if(args.length == 0){
+    if(args.length < 2){
       System.out.println("Insufficient arguments");
       return;
     }
     
-    int num = Integer.parseInt(args[0]);
-    String message = num + " is " + (isPrime(num)? "a prime number" : "not a prime number");
-    System.out.println(message);
+    int num1 = Integer.parseInt(args[0]);
+    int num2 = Integer.parseInt(args[1]);
+    int start = Math.min(num1, num2);
+    int end = Math.max(num1, num2);
+    printPrimesInRange(start, end);
   }
 }
