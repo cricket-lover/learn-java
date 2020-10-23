@@ -1,27 +1,27 @@
 public class CompareCharArrays {
 
-  public static boolean compareArrays(char[] charArray1, char[] charArray2) {
-    if (charArray1.length != charArray2.length) {
+  public static boolean compareArrays(char[] first, char[] second) {
+    if (first.length != second.length) {
       return false;
     }
 
     boolean areArraysEqual = true;
 
-    for (int index = 0; index <= charArray1.length - 1; index++) {
+    for (int index = 0; index <= first.length - 1; index++) {
       if (!areArraysEqual) {
         return areArraysEqual;
       }
 
-      areArraysEqual = charArray1[index] == charArray2[index];
+      areArraysEqual = first[index] == second[index];
     }
     return areArraysEqual;
   }
 
   public static void main(String[] args) {
-    char[] charArray1 = { 'p', 'h', 'a', 'n', 'i' };
-    char[] charArray2 = { 'p', 'h', 'a', 'n', 'i' };
+    char[] first = { 'p', 'h', 'a', 'n', 'i' };
+    char[] second = { 'p', 'h', 'a', 'n', 'i' };
 
-    boolean areArraysEqual = compareArrays(charArray1, charArray2);
+    boolean areArraysEqual = compareArrays(first, second);
     System.out.println(areArraysEqual);
   }
 }
