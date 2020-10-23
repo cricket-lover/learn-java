@@ -1,9 +1,9 @@
 public class CompoundInterest{
-  public static double getCompoundInterest(int principle, double rate, int period){
+  public static double getCompoundInterest(int principle, int rate, int period){
     double totalAmount = principle;
 
-    for(int count = 0; count < period; count++){
-      totalAmount = totalAmount * (1 + rate);
+    for(int count = 1; count <= period; count++){
+      totalAmount = totalAmount * (1 + rate/100.00);
     }
     return totalAmount - principle;
   }
@@ -15,9 +15,10 @@ public class CompoundInterest{
     }
 
     int principle = Integer.parseInt(args[0]);
-    double rate = Integer.parseInt(args[1])/100.00;
+    int rate = Integer.parseInt(args[1]);
     int period = Integer.parseInt(args[2]);
     double compoundInterest = getCompoundInterest(principle, rate, period);
-    System.out.println("Compound Interest of principle:" + principle + ", rate:" + rate + ", period:" + period + " is " + compoundInterest);
+    String message = "C.I of principle:" + principle + ", rate:" + rate + ", period:" + period + " is "; 
+    System.out.println(message + compoundInterest);
   }
 }

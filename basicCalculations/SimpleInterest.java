@@ -12,6 +12,7 @@ public class SimpleInterest{
     int principle = Integer.parseInt(args[0]);
     int rate = Integer.parseInt(args[1]);
     int period = Integer.parseInt(args[2]);
-    System.out.println("Simple Interest of principle:" + principle + ", rate:" + rate + ", period:" + period + " is " + getSimpleInterest(principle, rate, period));
+    String message = "Simple Interest of principle:" + principle + ", rate:" + rate + ", period:" + period + " is ";
+    System.out.println(message + getSimpleInterest(principle, rate, period));
   }
 }
